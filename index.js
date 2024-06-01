@@ -45,7 +45,6 @@ async function run() {
      //  Create Admin Using post method
     app.post("/adminData", async (req, res) => {
       const data = req.body;
-      console.log(data);
       const result = await adminData.insertOne(data);
       res.send(result);
     });
